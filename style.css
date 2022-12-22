@@ -1,0 +1,153 @@
+/*
+font-family: 'Sono', sans-serif;
+ font-family: 'Permanent Marker', cursive;
+ */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ .container {
+    height: 100vh;
+    background-color: rgb(1, 41, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+ }
+
+ /* kotak-satu */
+ .kotak-satu {
+    width: 300px;
+    height: 400px;
+    background-color: #eaeaea;
+    border: 10px solid rgb(128, 103, 24);
+    color: rgb(1, 41, 46);
+    padding: 20px;
+    font-family: Sans-Serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scale: 0;
+    transition: 1s;
+    opacity: 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+ }
+ .p1, .p2, .p3 {
+   opacity: 0;
+   transition: 1s;
+ }
+ .p1 {
+    align-self: flex-start;
+    transform: translateY(-100px);
+ }
+ .p2 {
+    text-align: left;
+    transform: translateX(-280px);
+ }
+ .p3 {
+    align-self: flex-end;
+    transform: translateY(100px);
+ }
+
+ /* tap */
+ .tap {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sono', sans-serif;
+    margin-bottom: 300px;
+    border-top: 10px solid rgb(128, 103, 24);
+    background-color: #eaeaea;
+    scale: 0;
+    opacity: 0;
+    color:rgb(1, 41, 46);
+    transition: 1s;
+    cursor: pointer;
+ }
+ .tap p {
+   text-align: center;
+ }
+ .kotak-dua {
+   width: 300px;
+   height: 400px;
+   background-color: #22044f;
+   background-image: url(ibu.jpg);
+   position: absolute;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-radius: 10px;
+   border: solid 5px #22044f;
+   box-shadow: 2px 2px 5px #444;
+   color: #eaeaea;
+   font-family: 'Sono', sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   transform: translateX(100%);
+   opacity: 0;
+   transition: 1s;
+ }
+ .kotak-dua h1 {
+   margin: 10px 0;
+   text-shadow: 3px 3px 2px #333;
+ }
+ .selamat, .hari, .guru, .nasional {
+   transition: 1s;
+   opacity: 0;
+ }
+ .selamat {
+   transform: translateX(-240px);
+ }
+ .hari {
+   transform: translateX(200px);
+ }
+ .guru {
+   transform: translateX(-200px);
+ }
+ .nasional {
+   transform: translateX(240px);
+ }
+.hero {
+   align-self: flex-start;
+   width: 150px;
+   margin-bottom: 350px;
+   opacity: 0;
+   position: absolute;
+   transition: 1s;
+}
+.otw {
+   position: absolute;
+   align-self: flex-end;
+   margin-bottom: 340px;
+}
+.logo {
+   width: 50px;
+   opacity: 0;
+   transition: 1s;
+}
+
+ /* js */
+ .skala-satu {
+   scale: 1;
+ }
+ .opasiti-satu {
+   opacity: 1;
+ }
+ .opasiti-sengah {
+   opacity: .7;
+ }
+ .x-nol {
+   transform: translateX(0);
+ }
+ .y-nol {
+   transform: translateY(0);
+ }
